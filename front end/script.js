@@ -7,7 +7,7 @@ document.querySelector('.busca').addEventListener('submit', async (event) =>{
         clearInfo();
         showWarning('Carregando...');
 
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input)}&appid=a54351ab8558174b7d387f8802f65c5e&units=metric&lang=pt_br`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(input)}&appid=####&units=metric&lang=pt_br`;
 
         let results = await fetch(url);
         let json = await results.json();
